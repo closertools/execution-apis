@@ -185,11 +185,11 @@ clients via the [rpc-compat][rpc-compat] simulator. How it works:
 - **Future** — Versioned releases will allow hive to pin to specific
   execution-apis versions.
 
-# GitHub Actions workflows
+## GitHub Actions workflows
 
-This directory drives three kinds of automation: the **release pipeline** (tag → build → Pages → GitHub Release → stamped spec branch), **continuous deploy from `main`** (rolling docs site and unstamped spec branch), and **PR gating** (spec tests, docs smoke-build, spellcheck).
+For release pipeline, Pages deploy, and PR CI details (including Mermaid diagrams), see the [workflows README on GitHub][workflows-readme].
 
-For details see the .github/workflows README.md
+The release github actions drives three kinds of automation: the **release pipeline** (tag → build → Pages → GitHub Release → stamped spec branch), **continuous deploy from `main`** (rolling docs site and unstamped spec branch), and **PR gating** (spec tests, docs smoke-build, spellcheck).
 
 [exec-apis]: https://github.com/ethereum/execution-apis
 [pm]: https://github.com/ethereum/pm
@@ -201,3 +201,4 @@ For details see the .github/workflows README.md
 [hive]: https://github.com/ethereum/hive
 [rpc-compat]: https://github.com/ethereum/hive/tree/master/simulators/ethereum/rpc-compat
 [hivetests]: https://hive.ethpandaops.io
+[workflows-readme]: https://github.com/ethereum/execution-apis/blob/main/.github/workflows/README.md
