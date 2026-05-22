@@ -11,6 +11,19 @@
       result:
         name: Chain ID
         value: '0x1'
+- name: eth_new_chainId
+  summary: Returns the chain ID of the current network.
+  params: []
+  result:
+    name: Chain ID
+    schema:
+      $ref: '#/components/schemas/uint'
+  examples:
+    - name: eth_chainId example
+      params: []
+      result:
+        name: Chain ID
+        value: '0x1'
 - name: eth_syncing
   summary: Returns an object with data about the sync status or false.
   params: []
