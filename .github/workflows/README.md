@@ -65,6 +65,12 @@ flowchart LR
 
 Tag `vX.Y.Z` on `main` and push the tag. [release.yaml](release.yaml) runs automatically; no manual steps are required for Pages, the GitHub Release, or `assembled-spec`.
 
+### Automated Release Notes PR
+
+NOTE: The release will then trigger a release notes PR. Because we publish the draft to NEXT, the actual commit sha of the repo doesn't change on tag push. This then can sometimes
+not invalidate the cache. The subsequent automated PR that follows, forces the version and the release notes to invalidate the github pages CDN, when merged. This will guarantee that
+the latest release invalidates the github pages cache and deploys.
+
 ### Re-run a release
 
 ```bash
